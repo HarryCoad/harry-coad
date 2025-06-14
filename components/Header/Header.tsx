@@ -13,7 +13,7 @@ const ICON_SIZE = 25;
 
 export const Header = () => {
   return (
-    <div className="flex items-center justify-center border-b-1 border-zinc-700 w-full">
+    <div className="sticky backdrop-blur-md top-0 flex items-center justify-center border-b-1 border-zinc-700 w-full">
       <header className="container grid grid-cols-3 gap-4 py-4">
         <Link href={"/"}>
           <House size={ICON_SIZE} />

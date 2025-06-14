@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background min-h-screen flex flex-col items-center`}
       >
@@ -35,7 +35,7 @@ export default function RootLayout({
           defaultTheme="system"
         >
           <Header />
-          <main className="flex-1 flex grow">{children}</main>
+          <main className="flex-1 flex grow w-full">{children}</main>
           <footer>Footer</footer>
         </ThemeProvider>
       </body>
