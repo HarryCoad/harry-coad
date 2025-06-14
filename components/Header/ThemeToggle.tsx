@@ -1,5 +1,6 @@
 "use client";
 
+import { useIsMounted } from "@/hooks/useIsMounted";
 import { AnimatePresence, motion } from "motion/react";
 import { useTheme } from "next-themes";
 import React from "react";
@@ -9,6 +10,8 @@ export const ThemeToggle: React.FC<{ className?: string }> = ({
 }) => {
   const { setTheme, resolvedTheme } = useTheme();
 
+  const isMounted = useIsMounted();
+
   const isDark = resolvedTheme === "dark";
 
   const handleToggleTheme = () => {
@@ -16,6 +19,8 @@ export const ThemeToggle: React.FC<{ className?: string }> = ({
 
     setTheme(newTheme);
   };
+
+  if (!isMounted) return null;
 
   return (
     <button onClick={handleToggleTheme} className={className}>
