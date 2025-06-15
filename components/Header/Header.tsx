@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { House, User, FolderKanban, Headset } from "lucide-react";
 import Link from "next/link";
@@ -13,11 +15,14 @@ const ICON_SIZE = 25;
 
 export const Header = () => {
   return (
-    <div className="sticky backdrop-blur-md top-0 flex items-center justify-center border-b-1 border-zinc-700 w-full">
-      <header className="container grid grid-cols-3 gap-4 py-4">
-        <Link href={"/"}>
+    <div className="sticky z-10 backdrop-blur-md top-0 flex items-center justify-center border-b-1 border-zinc-700 w-full">
+      <header className="container grid grid-cols-3 gap-4 py-4  max-w-[800px]">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <House size={ICON_SIZE} />
-        </Link>
+        </button>
+        {/* <Link href={"/"}>
+          <House size={ICON_SIZE} />
+        </Link> */}
 
         <nav>
           <ul className="flex gap-10 items-center justify-center">

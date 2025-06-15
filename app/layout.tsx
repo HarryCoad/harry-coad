@@ -29,13 +29,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background min-h-screen flex flex-col items-center`}
       >
-        <ThemeProvider
-          attribute={"class"}
-          enableSystem={true}
-          defaultTheme="system"
-        >
+        <ThemeProvider attribute={"class"} defaultTheme="dark">
           <Header />
-          <main className="flex-1 flex grow w-full">{children}</main>
+          <main className="flex-1 flex grow w-full max-w-[800px]">
+            {children}
+          </main>
           <footer>Footer</footer>
         </ThemeProvider>
       </body>

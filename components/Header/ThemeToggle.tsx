@@ -1,6 +1,7 @@
 "use client";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
+import clsx from "clsx";
 import { AnimatePresence, motion } from "motion/react";
 import { useTheme } from "next-themes";
 import React from "react";
@@ -23,7 +24,10 @@ export const ThemeToggle: React.FC<{ className?: string }> = ({
   if (!isMounted) return null;
 
   return (
-    <button onClick={handleToggleTheme} className={className}>
+    <button
+      onClick={handleToggleTheme}
+      className={clsx("cursor-pointer", className)}
+    >
       <AnimatePresence mode="wait">
         {isDark ? (
           <motion.svg
