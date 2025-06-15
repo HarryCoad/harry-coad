@@ -23,7 +23,7 @@ export const Name = () => {
   }, []);
 
   return (
-    <h1 onClick={replay} className="mb-4 text-4xl">
+    <h1 onClick={replay} className="mb-4 text-4xl cursor-pointer">
       Harry <span ref={ref}>{name}</span>
     </h1>
   );

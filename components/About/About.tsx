@@ -58,7 +58,7 @@ export const About = () => {
             key={i}
             className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-500 rounded-4xl text-sm hover:border-orange-800"
           >
-            {skill.Icon && <skill.Icon className="w-5 h-5 fill-white" />}
+            {skill.Icon && <skill.Icon className="w-5 h-5" />}
             {skill.label}
           </span>
         ))}
@@ -68,12 +68,7 @@ export const About = () => {
             key={i}
             className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-500 rounded-4xl text-sm hover:border-orange-800"
           >
-            {skill.Icon && (
-              <div className="relative">
-                <skill.Icon className="w-5 h-5 " />
-                <span className=" top-0 absolute rounded-full w-5 h-5 bg-white -z-10" />
-              </div>
-            )}
+            {skill.Icon && <skill.Icon className="w-5 h-5 dark:fill-white" />}
             {skill.label}
           </span>
         ))}
