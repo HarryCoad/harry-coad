@@ -1,5 +1,6 @@
 import { About } from "@/components/About/About";
 import { Contact } from "@/components/Contact/Contact";
+import { Work } from "@/components/Work/Work";
 
 export default function Home() {
   return (
@@ -12,9 +13,9 @@ export default function Home() {
       </section>
       <section
         id="work"
-        className="w-full flex items-center justify-center h-[800px] mb-10 "
+        className="w-full flex items-center justify-center mb-10 "
       >
-        <h1>Work</h1>
+        <Work />
       </section>
       <section
         id="contact"

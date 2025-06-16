@@ -6,7 +6,7 @@ import { EmailBtn } from "./EmailBtn";
 export const Contact = () => {
   return (
     <div className="flex flex-col items-start w-full gap-4">
-      <h2 className="group text-3xl mb-2">Wanna get in touch?</h2>
+      <h2 className="group text-3xl mb-2">Want get in touch?</h2>
       <div className="flex gap-10">
         <p className="text-zinc-500">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim

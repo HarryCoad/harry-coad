@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
-        className={`${sourceCodePro.variable} antialiased bg-background min-h-screen flex flex-col items-center`}
+        className={`${sourceCodePro.variable} antialiased bg-zinc-100 dark:bg-black min-h-screen flex flex-col items-center`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark">
           <Header />
