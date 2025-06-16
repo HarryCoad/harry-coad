@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourceCodePro = Source_Code_Pro({
+  variable: "--font-source-code-pro",
   subsets: ["latin"],
 });
 
@@ -27,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background min-h-screen flex flex-col items-center`}
+        className={`${sourceCodePro.variable} antialiased bg-background min-h-screen flex flex-col items-center`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark">
           <Header />
-          <main className="flex-1 flex grow w-full max-w-[800px]">
+          <main className="flex-1 flex grow w-full max-w-[800px] font-sans">
             {children}
           </main>
           <footer>Footer</footer>

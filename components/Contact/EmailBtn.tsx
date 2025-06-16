@@ -26,7 +26,7 @@ export const EmailBtn = () => {
             exit={{ opacity: 0, x: -30, rotateX: -90 }}
             animate={{ opacity: 1, x: 0, rotateX: 0 }}
             transition={{ duration: 0.3 }}
-            className="inline-block w-40"
+            className="inline-block min-w-48"
           >
             harry.coad@gmail.com
           </motion.span>
@@ -37,7 +37,7 @@ export const EmailBtn = () => {
             animate={{ opacity: 1, x: 0, rotateX: 0 }}
             exit={{ opacity: 0, x: 30, rotateX: 90 }}
             transition={{ duration: 0.3 }}
-            className="inline-block w-40"
+            className="inline-block min-w-48"
           >
             Copied!
           </motion.span>
