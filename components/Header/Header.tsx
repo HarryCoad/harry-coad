@@ -18,7 +18,7 @@ export const Header = () => {
     <div className="sticky z-10 backdrop-blur-md top-0 flex items-center justify-center border-b-1 border-zinc-700 w-full">
       <header className="container grid grid-cols-3 gap-4 py-4  max-w-[800px]">
         <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <House size={ICON_SIZE} />
+          <House size={ICON_SIZE} className="hover:stroke-orange-800" />
         </button>
         {/* <Link href={"/"}>
           <House size={ICON_SIZE} />
@@ -29,7 +29,10 @@ export const Header = () => {
             {sections.map((item, i) => (
               <Link key={i} href={`#${item.section}`}>
                 <li title={item.label}>
-                  <item.icon size={ICON_SIZE} />
+                  <item.icon
+                    size={ICON_SIZE}
+                    className="hover:stroke-orange-800"
+                  />
                 </li>
               </Link>
             ))}

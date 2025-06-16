@@ -25,6 +25,7 @@ export const ThemeToggle: React.FC<{ className?: string }> = ({
 
   return (
     <button
+      title="Toggle theme"
       onClick={handleToggleTheme}
       className={clsx("cursor-pointer", className)}
     >

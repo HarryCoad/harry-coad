@@ -34,7 +34,7 @@ export const SectorCard: React.FC<SectorCardProps> = ({
   return (
     <div
       key={title}
-      className="bg-zinc-100 dark:bg-zinc-800 border-1 border-zinc-200 dark:border-zinc-800 rounded-2xl h-full shadow-lg"
+      className="bg-zinc-100 hover:bg-zinc-200/20 dark:bg-zinc-800 dark:hover:bg-zinc-800/90 transition-colors border-1 border-zinc-200 dark:border-zinc-800 rounded-2xl h-full shadow-lg"
     >
       <motion.div
         layout="position"
