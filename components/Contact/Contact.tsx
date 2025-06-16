@@ -9,10 +9,8 @@ export const Contact = () => {
       <h2 className="group text-3xl mb-2">Want get in touch?</h2>
       <div className="flex gap-10">
         <p className="text-zinc-500">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim
-          quos impedit repellat vel ratione rem earum deleniti, recusandae
-          consequuntur veniam repellendus obcaecati non pariatur error inventore
-          nam minus! Quibusdam, praesentium rerum.
+          Got a question, opportunity, or just want to say hello? Feel free to
+          drop me a message — I’d love to hear from you.
         </p>
 
         <div className="flex flex-col items-start gap-4">

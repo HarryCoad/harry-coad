@@ -34,22 +34,33 @@ export const About = () => {
         <div>
           <Name />
           <p className="text-zinc-500 max-w-[450px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus inventore temporibus quisquam est nihil numquam
-            voluptate natus et eos. Quis consequuntur aspernatur deleniti illum
-            rem saepe ea labore quaerat esse expedita odit iusto, fuga
-            accusantium ratione omnis? Eligendi aspernatur minus praesentium
-            officiis.
+            I’m a frontend developer with a background in building responsive,
+            maintainable interfaces using React and TypeScript. I enjoy solving
+            product problems with clean code and collaborating closely with
+            teams to bring ideas to life.
           </p>
         </div>
       </div>
-      <h2 className="group text-3xl mb-2">
-        Intro{" "}
-        <span className="group-hover:animate-wiggle inline-block">👋🏽</span>
-      </h2>
-      <p className="text-zinc-500 mb-20">
-        Potentially more of a personal intro about me
-      </p>
+
+      <div className="group">
+        <h2 className="text-3xl mb-2">
+          Intro{" "}
+          <span className="group-hover:animate-wiggle inline-block">👋🏽</span>
+        </h2>
+        <p className="text-zinc-500 mb-20">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur
+          quisquam quidem eligendi, quas quae? Delectus cupiditate ea, laborum
+          eius temporibus commodi illo tenetur quam neque praesentium sunt iste
+          et doloremque animi nobis quo itaque blanditiis in? Vero quasi
+          pariatur, doloremque placeat dignissimos omnis tempore illo aliquid
+          optio.
+          <br />
+          <br />
+          Doloremque porro fugit voluptatibus fugiat. Doloribus soluta non id
+          illum dignissimos cumque eaque rerum est dolorum explicabo enim
+          deleniti laboriosam sint, reprehenderit quasi.
+        </p>
+      </div>
 
       <h2 className="text-3xl mb-2">Skills 🤹🏽</h2>
       <div className="flex gap-2 flex-wrap">
