@@ -41,12 +41,17 @@ export const Work = () => {
     expanded && expanded[0] === x && expanded[1] === y;
 
   return (
-    <div className="realtive w-full h-[700px] sm:h-[500px] mb-10">
+    <div className="realtive w-full">
       <h2 className="text-3xl mb-4">Work ⌨️</h2>
+      <p className="text-zinc-500 pb-5">
+        I worked at a London-based consultancy where I built frontend features
+        for a wide range of products, giving me hands-on experience across
+        multiple industries and problem spaces. Examples include:
+      </p>
 
       <div
         ref={ref}
-        className="grid grid-cols-1 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-5 sm:gap-10 w-full h-full"
+        className="grid grid-cols-1 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-5 sm:gap-10 w-full h-[700px] sm:h-[500px]"
       >
         {workArr.map(({ x, y, title, icon, description }) => (
           <motion.div
@@ -88,10 +93,10 @@ const workArr: Array<{
   {
     x: 0,
     y: 1,
-    title: "Ecommerce",
+    title: "E-commerce",
     icon: "ShoppingBasket",
     description:
-      "Developed a modern ecommerce frontend with dynamic product listings and Stripe-powered checkout. Prioritized responsive design and performance across devices.",
+      "Developed a modern e-commerce frontend with dynamic product listings and Stripe-powered checkout. Prioritised responsive design and performance across devices.",
   },
   {
     x: 1,

@@ -34,10 +34,10 @@ export const About = () => {
         <div>
           <Name />
           <p className="text-zinc-500 max-w-[450px]">
-            I’m a frontend developer with a background in building responsive,
-            maintainable interfaces using React and TypeScript. I enjoy solving
-            product problems with clean code and collaborating closely with
-            teams to bring ideas to life.
+            I&apos;m a frontend developer with a background in building
+            responsive, maintainable interfaces using React and TypeScript. I
+            enjoy solving product problems with clean code and collaborating
+            closely with teams to bring ideas to life.
           </p>
         </div>
       </div>
@@ -48,17 +48,20 @@ export const About = () => {
           <span className="group-hover:animate-wiggle inline-block">👋🏽</span>
         </h2>
         <p className="text-zinc-500 mb-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur
-          quisquam quidem eligendi, quas quae? Delectus cupiditate ea, laborum
-          eius temporibus commodi illo tenetur quam neque praesentium sunt iste
-          et doloremque animi nobis quo itaque blanditiis in? Vero quasi
-          pariatur, doloremque placeat dignissimos omnis tempore illo aliquid
-          optio.
+          I earned my master’s degree in Physics with Astrophysics from the
+          University of Exeter, but my journey into software began later,
+          fuelled by a growing interest in the web and a desire to create.
+          I&apos;m a self-taught developer who started by learning the
+          fundamentals, HTML, CSS, and JavaScript and gradually moved into
+          modern frontend frameworks like React and TypeScript. That curiosity
+          led me deeper into the stack, where I picked up Node.js and MongoDB to
+          build full-stack applications and better understand how everything
+          fits together.
           <br />
-          <br />
-          Doloremque porro fugit voluptatibus fugiat. Doloribus soluta non id
-          illum dignissimos cumque eaque rerum est dolorum explicabo enim
-          deleniti laboriosam sint, reprehenderit quasi.
+          <br />I grew up in the countryside, surrounded by nature, and that
+          connection has always stayed with me. I&apos;d love to bring that
+          perspective into my work, building thoughtful, responsible tech that
+          supports both people and the planet.
         </p>
       </div>
 

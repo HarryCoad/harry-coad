@@ -29,7 +29,7 @@ export default function RootLayout({
           <main className="flex-1 flex grow w-full max-w-[800px] font-sans">
             {children}
           </main>
-          <footer>Footer</footer>
+          <footer></footer>
         </ThemeProvider>
       </body>
     </html>
