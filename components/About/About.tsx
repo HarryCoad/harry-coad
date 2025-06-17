@@ -33,12 +33,13 @@ export const About = () => {
 
         <div>
           <Name />
-          <p className="text-zinc-500 max-w-[450px]">
+          <p className="text-zinc-500 max-w-[450px] mb-4">
             I&apos;m a frontend developer with a background in building
             responsive, maintainable interfaces using React and TypeScript. I
             enjoy solving product problems with clean code and collaborating
             closely with teams to bring ideas to life.
           </p>
+          <p className="dark:text-white">Welcome to my page!</p>
         </div>
       </div>
 
