@@ -8,7 +8,7 @@ export const Contact = () => {
     <div className="flex flex-col items-center text-center sm:text-left sm:items-start w-full gap-4">
       <h2 className="group text-3xl mb-2">Want to get in touch?</h2>
       <div className="flex flex-col sm:flex-row gap-10">
-        <p className="text-zinc-500">
+        <p className="text-zinc-600 dark:text-zinc-400">
           Got a question, opportunity, or just want to say hello? Feel free to
           drop me a message — I&apos;d love to hear from you.
         </p>

@@ -43,7 +43,7 @@ export const Work = () => {
   return (
     <div className="realtive w-full">
       <h2 className="text-3xl mb-4">Work ⌨️</h2>
-      <p className="text-zinc-500 pb-5">
+      <p className="text-zinc-600 dark:text-zinc-400 pb-5">
         I worked at a London-based consultancy where I built frontend features
         for a wide range of products, giving me hands-on experience across
         multiple industries and problem spaces. Examples include:

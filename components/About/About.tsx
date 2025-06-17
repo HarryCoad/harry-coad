@@ -28,12 +28,12 @@ export const About = () => {
       <div className="flex flex-col md:flex-row gap-10 items-center mb-20">
         <div className="group relative min-w-60 min-h-60 sm:min-w-80 sm:min-h-80">
           <div className="group-hover:w-80 group-hover:h-80 transition-all absolute top-1/2 left-1/2 -translate-1/2 w-64 h-64 sm:w-84 sm:h-84 border-2 border-orange-900 rounded-full" />
-          <Image alt="Me" src={"/me_2.JPEG"} className="rounded-full" fill />
+          <Image alt="Me" src={"/me.JPEG"} className="rounded-full" fill />
         </div>
 
         <div>
           <Name />
-          <p className="text-zinc-500 max-w-[450px] mb-4">
+          <p className="text-zinc-600 dark:text-zinc-400 max-w-[450px] mb-4">
             I&apos;m a frontend developer with over 3 years of experience in
             building responsive, maintainable interfaces using React and
             TypeScript. I enjoy solving product problems with clean code and
@@ -48,7 +48,7 @@ export const About = () => {
           Intro{" "}
           <span className="group-hover:animate-wiggle inline-block">👋🏽</span>
         </h2>
-        <p className="text-zinc-500 mb-20">
+        <p className="text-zinc-600 dark:text-zinc-400 mb-20">
           I earned my master’s degree in Physics with Astrophysics from the
           University of Exeter, but my journey into software began later,
           fuelled by a growing interest in the web and a desire to create.
@@ -71,7 +71,7 @@ export const About = () => {
         {skills.slice(0, -1).map((skill, i) => (
           <span
             key={i}
-            className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-500 rounded-4xl text-sm hover:border-orange-800"
+            className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-400 rounded-4xl text-sm hover:border-orange-800"
           >
             {skill.Icon && <skill.Icon className="w-5 h-5" />}
             {skill.label}
@@ -81,14 +81,14 @@ export const About = () => {
         {skills.slice(-1).map((skill, i) => (
           <span
             key={i}
-            className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-500 rounded-4xl text-sm hover:border-orange-800"
+            className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-400 rounded-4xl text-sm hover:border-orange-800"
           >
             {skill.Icon && <skill.Icon className="w-5 h-5 dark:fill-white" />}
             {skill.label}
           </span>
         ))}
         {/* Silly one */}
-        <span className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-500 rounded-4xl text-sm hover:border-orange-800">
+        <span className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-400 rounded-4xl text-sm hover:border-orange-800">
           <Dices className="w-5 h-5" />
           Board Games
         </span>
