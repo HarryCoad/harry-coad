@@ -34,7 +34,7 @@ export const SectorCard: React.FC<SectorCardProps> = ({
   return (
     <div
       key={title}
-      className="bg-zinc-100 hover:bg-zinc-200/20 dark:bg-zinc-800 dark:hover:bg-zinc-800/90 transition-colors border-1 border-zinc-200 dark:border-zinc-800 rounded-2xl h-full shadow-lg"
+      className="bg-zinc-100 hover:bg-zinc-200/20 dark:bg-zinc-800 dark:hover:bg-zinc-800/90 transition-colors border-1 border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-lg h-full"
     >
       <motion.div
         layout="position"
@@ -49,7 +49,7 @@ export const SectorCard: React.FC<SectorCardProps> = ({
               layoutId={title + "-icon"}
               transition={{ delay: 0.2 }}
             >
-              <Icon className="w-20 h-20 mb-2 stroke-1 justify-self-center" />
+              <Icon className="w-15 h-15 sm:w-20 sm:h-20 mb-2 stroke-1 justify-self-center" />
             </motion.div>
           )}
           <AnimatePresence>

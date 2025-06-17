@@ -7,13 +7,13 @@ export default function Home() {
     <div className="container mx-auto flex flex-col items-center justify-center w-full py-10">
       <section
         id="about"
-        className="w-full flex items-center justify-center mb-10 "
+        className="w-full flex items-center justify-center mb-20 "
       >
         <About />
       </section>
       <section
         id="work"
-        className="w-full flex items-center justify-center mb-10 "
+        className="w-full flex items-center justify-center mb-20 "
       >
         <Work />
       </section>

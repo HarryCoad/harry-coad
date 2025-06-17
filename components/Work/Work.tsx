@@ -18,13 +18,13 @@ export const Work = () => {
     const isExpanded = xExpanded === x && yExpanded === y;
 
     if (!expanded) {
-      return "col-span-2 row-span-2";
+      return "col-span-1 sm:col-span-2 row-span-2";
     } else if (isExpanded) {
-      return "col-span-3 row-span-3";
+      return "col-span-1 row-span-5 sm:col-span-3 sm:row-span-3";
     } else if (!isExpanded) {
       return clsx(
-        xExpanded === x ? "row-span-3" : "row-span-1",
-        yExpanded === y ? "col-span-3" : "col-span-1"
+        xExpanded === x ? "row-span-1 sm:row-span-3" : "row-span-1",
+        yExpanded === y ? "col-span-1 sm:col-span-3" : "col-span-1"
       );
     }
   };
@@ -41,12 +41,12 @@ export const Work = () => {
     expanded && expanded[0] === x && expanded[1] === y;
 
   return (
-    <div className="w-full">
+    <div className="realtive w-full h-[700px] sm:h-[500px] mb-10">
       <h2 className="text-3xl mb-4">Work ⌨️</h2>
 
       <div
         ref={ref}
-        className="grid grid-cols-4 grid-rows-4 gap-10 w-full h-[500px]"
+        className="grid grid-cols-1 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-5 sm:gap-10 w-full h-full"
       >
         {workArr.map(({ x, y, title, icon, description }) => (
           <motion.div

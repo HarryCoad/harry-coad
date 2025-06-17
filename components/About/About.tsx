@@ -25,9 +25,9 @@ import { Dices } from "lucide-react";
 export const About = () => {
   return (
     <div>
-      <div className="flex gap-10 items-center mb-20">
-        <div className="group relative min-w-80 min-h-80">
-          <div className="group-hover:w-80 group-hover:h-80 transition-all absolute top-1/2 left-1/2 -translate-1/2 w-84 h-84 border-2 border-orange-900 rounded-full" />
+      <div className="flex flex-col md:flex-row gap-10 items-center mb-20">
+        <div className="group relative min-w-60 min-h-60 sm:min-w-80 sm:min-h-80">
+          <div className="group-hover:w-80 group-hover:h-80 transition-all absolute top-1/2 left-1/2 -translate-1/2 w-64 h-64 sm:w-84 sm:h-84 border-2 border-orange-900 rounded-full" />
           <Image alt="Me" src={"/me_2.JPEG"} className="rounded-full" fill />
         </div>
 
