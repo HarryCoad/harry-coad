@@ -11,8 +11,16 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  ),
   title: "Harry Coad",
   description: "Personal website of Harry Coad, a frontend developer.",
+  openGraph: {
+    title: "Harry Coad",
+    description: "Personal website of Harry Coad, a frontend developer.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
