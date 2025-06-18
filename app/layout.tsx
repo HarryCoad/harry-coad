@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import Head from "next/head";
+import { Footer } from "@/components/Footer";
 
 const sourceCodePro = Source_Code_Pro({
   variable: "--font-source-code-pro",
@@ -41,7 +42,7 @@ export default function RootLayout({
           <main className="flex-1 flex grow w-full max-w-[800px] font-sans">
             {children}
           </main>
-          <footer></footer>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
