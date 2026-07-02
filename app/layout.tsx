@@ -13,13 +13,13 @@ const sourceCodePro = Source_Code_Pro({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   ),
   title: "Harry Coad",
-  description: "Personal website of Harry Coad, a frontend developer.",
+  description: "Personal website of Harry Coad, a software engineer.",
   openGraph: {
     title: "Harry Coad",
-    description: "Personal website of Harry Coad, a frontend developer.",
+    description: "Personal website of Harry Coad, a software engineer.",
     images: ["/opengraph-image.png"],
   },
 };

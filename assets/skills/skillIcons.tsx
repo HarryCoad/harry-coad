@@ -15,6 +15,10 @@ import ReduxIcon from "./redux.svg";
 import SassIcon from "./sass.svg";
 import TailwindIcon from "./tailwindcss-icon.svg";
 import TypescriptIcon from "./typescript-icon.svg";
+import N8NIcon from "./n8n-dark.svg";
+import DockerIcon from "./docker-icon.svg";
+import AiIcon from "./ai-icon.svg";
+import RestApiIcon from "./swagger-icon.svg";
 
 export {
   CssIcon,
@@ -34,4 +38,8 @@ export {
   SassIcon,
   TailwindIcon,
   TypescriptIcon,
+  N8NIcon,
+  DockerIcon,
+  AiIcon,
+  RestApiIcon,
 };

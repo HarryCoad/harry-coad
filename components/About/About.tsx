@@ -19,6 +19,10 @@ import {
   SQLIcon,
   TailwindIcon,
   TypescriptIcon,
+  N8NIcon,
+  DockerIcon,
+  AiIcon,
+  RestApiIcon,
 } from "@/assets/skills/skillIcons";
 import { Dices } from "lucide-react";
 
@@ -34,12 +38,14 @@ export const About = () => {
         <div>
           <Name />
           <p className="text-zinc-600 dark:text-zinc-400 max-w-[450px] mb-4">
-            I&apos;m a frontend developer with over 3 years of experience in
-            building responsive, maintainable interfaces using React and
-            TypeScript. I enjoy solving product problems with clean code and
-            collaborating closely with teams to bring ideas to life.
+            I&apos;m a full-stack software engineer with over 3 years of
+            experience building products in React, TypeScript, and Node.js. More
+            recently I&apos;ve been working on AI-powered research pipelines and
+            automation systems. I enjoy solving real problems with clean,
+            maintainable code and collaborating closely with the people I work
+            with.
           </p>
-          <p className="dark:text-white">Welcome to my page!</p>
+          <p className="dark:text-white text-2xl">Welcome to my page!</p>
         </div>
       </div>
 
@@ -49,46 +55,37 @@ export const About = () => {
           <span className="group-hover:animate-wiggle inline-block">👋🏽</span>
         </h2>
         <p className="text-zinc-600 dark:text-zinc-400 mb-20">
-          I earned my master’s degree in Physics with Astrophysics from the
+          I earned my master&apos;s degree in Physics with Astrophysics from the
           University of Exeter, but my journey into software began later,
-          fuelled by a growing interest in the web and a desire to create.
-          I&apos;m a self-taught developer who started by learning the
-          fundamentals, HTML, CSS, and JavaScript and gradually moved into
-          modern frontend frameworks like React and TypeScript. That curiosity
-          led me deeper into the stack, where I picked up Node.js and MongoDB to
-          build full-stack applications and better understand how everything
-          fits together.
+          fuelled by a growing interest in the web and a desire to create. I
+          spent three years at a London-based consultancy building products
+          across fintech, e-commerce, and entertainment, working across the full
+          stack with React, TypeScript, and Node.js. More recently I've been
+          freelancing, designing and building AI-powered research pipelines and
+          automation systems.
           <br />
           <br />I grew up in the countryside, surrounded by nature, and that
-          connection has always stayed with me. I&apos;d love to bring that
-          perspective into my work, building thoughtful, responsible tech that
-          supports both people and the planet.
+          connection has stayed with me. I want to bring that perspective into
+          my work, building thoughtful, responsible tech that supports both
+          people and the planet 🌍.
         </p>
       </div>
 
       <h2 className="text-3xl mb-2">Skills 🤹🏽</h2>
       <div className="flex gap-2 flex-wrap">
-        {skills.slice(0, -1).map((skill, i) => (
+        {skills.map((skill, i) => (
           <span
             key={i}
-            className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-400 rounded-4xl text-sm hover:border-orange-800"
+            className="flex items-center gap-2 py-2 px-4 border border-zinc-400 rounded-4xl text-sm hover:border-orange-800 duration-1000 hover:duration-150"
           >
-            {skill.Icon && <skill.Icon className="w-5 h-5" />}
-            {skill.label}
-          </span>
-        ))}
-        {/* Fix a background issue with github icon on darkmode */}
-        {skills.slice(-1).map((skill, i) => (
-          <span
-            key={i}
-            className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-400 rounded-4xl text-sm hover:border-orange-800"
-          >
-            {skill.Icon && <skill.Icon className="w-5 h-5 dark:fill-white" />}
+            {skill.Icon && (
+              <skill.Icon className={`${skill.iconClassName ?? ""} w-5 h-5`} />
+            )}
             {skill.label}
           </span>
         ))}
         {/* Silly one */}
-        <span className="flex items-center gap-2 py-2 px-4 border-1 border-zinc-400 rounded-4xl text-sm hover:border-orange-800">
+        <span className="flex items-center gap-2 py-2 px-4 border border-zinc-400 rounded-4xl text-sm hover:border-orange-800 duration-1000 hover:duration-150">
           <Dices className="w-5 h-5" />
           Board Games
         </span>
@@ -97,7 +94,11 @@ export const About = () => {
   );
 };
 
-const skills: Array<{ label: string; Icon: React.FC<SVGProps<SVGElement>> }> = [
+const skills: Array<{
+  label: string;
+  Icon: React.FC<SVGProps<SVGElement>>;
+  iconClassName?: string;
+}> = [
   { label: "JavaScript", Icon: JavascriptIcon },
   { label: "TypeScript", Icon: TypescriptIcon },
   { label: "Python", Icon: PythonIcon },
@@ -116,5 +117,17 @@ const skills: Array<{ label: string; Icon: React.FC<SVGProps<SVGElement>> }> = [
   { label: "MongoDB", Icon: MongoDBIcon },
   { label: "JSON", Icon: JSONIcon },
   { label: "Git", Icon: GitIcon },
-  { label: "GitHub", Icon: GitHubIcon },
+  {
+    label: "GitHub",
+    Icon: GitHubIcon,
+    iconClassName: "dark:fill-white",
+  },
+  { label: "Docker", Icon: DockerIcon },
+  { label: "", Icon: N8NIcon, iconClassName: "w-15 h-5 dark:text-white" },
+  { label: "AI", Icon: AiIcon, iconClassName: "dark:fill-white" },
+  {
+    label: "REST API",
+    Icon: RestApiIcon,
+    iconClassName: "dark:fill-white",
+  },
 ];

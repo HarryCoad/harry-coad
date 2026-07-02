@@ -17,7 +17,7 @@ export const Contact = () => {
           <EmailBtn />
           <div className="flex items-center justify-center gap-4">
             <MapPin className="w-8 h-8" />
-            Phoenix, USA
+            relocating to London, UK
           </div>
           <div className="flex items-center justify-center gap-4">
             <a
