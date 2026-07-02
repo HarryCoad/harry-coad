@@ -60,9 +60,9 @@ export const About = () => {
           fuelled by a growing interest in the web and a desire to create. I
           spent three years at a London-based consultancy building products
           across fintech, e-commerce, and entertainment, working across the full
-          stack with React, TypeScript, and Node.js. More recently I've been
-          freelancing, designing and building AI-powered research pipelines and
-          automation systems.
+          stack with React, TypeScript, and Node.js. More recently I&apos;ve
+          been freelancing, designing and building AI-powered research pipelines
+          and automation systems.
           <br />
           <br />I grew up in the countryside, surrounded by nature, and that
           connection has stayed with me. I want to bring that perspective into
